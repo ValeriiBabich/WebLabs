@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="icon" href="resources/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Лабораторна робота №1</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК"</h1>
+        <img class="photo1" src="resources/tomash.jpg" alt="Томаш">
+        <img class="photo2" src="https://thumbs.dreamstime.com/b/gray-man-avatar-design-concept-ai-supported-81256396.jpg" alt="Бабич">
+        <h2>Бригада №20</h2>
+        <h2 class="names">Студенти: гр. IO-02 Бабич Валерій, гр. ІО-02 Томаш Олександр</h2>
+    </div>
+    <div class="labs">
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №1</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №2</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №3</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №4</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №5</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №6</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №7</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №8</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №9</button>
+    </div>
+    <div class="main">
+        <div class="parts">
+            <button class="part" onclick="openPart(event, 'part1')">Тема, Мета ЛР №1. Місце розташування сайту, звіту</button>
+            <button class="part" onclick="openPart(event, 'part2')">Опис предметного середовища</button>
+            <button class="part" onclick="openPart(event, 'part3')">HTML-код головної сторінки WEB-застосунку</button>
+            <button class="part" onclick="openPart(event, 'part4')">Зовнішній вигляд веб WEB-застосунку</button>
+            <button class="part" onclick="openPart(event, 'part5')">Висновки до ЛР №1</button>
+            <button class="part" onclick="openPart(event, 'part6')">Виконавці</button>
+        </div>
+        <div class="content">
+            <div id="part1" class="tabcontent">
+                <h3 style="text-align: center;">СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. 
+                    РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.</h3>
+                <h3>Мета:</h3>
+                <p>придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами
+                    Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.</p>
+                <br><br><br>
+                Місце розташування сайту, звіту: <a href="https://github.com/ValeriiBabich/WebLabs">Github</a>
+            </div>
+            <div id="part2" class="tabcontent">
+                <h3>Бізнес логіка WEB-застосунку туристичного агенства</h3>
+                <h4>Функціональні вимоги:</h4>
+                <ul>
+                    <li>Перегляд каталогу доступних турів з можливістю детального ознайомлення з настпуною інформацією:</li>
+                    <ul>
+                        <li>Інформація про дату/місце початку/кінця туру</li>
+                        <li>Детальна інформація про готель</li>
+                        <li>Інформація про кількість доступних/заброньованих місць</li>
+                        <li>Інформація про програму розваг</li>
+                        <li>Інформація про додаткові послуги</li>
+                    </ul>
+                    <li>Реєстрація персональних кабінетів користувачів</li>
+                    <li>Перегляд персональних відгуків про тури від клієнтів</li>
+                    <li>Надання інформації для зворотнього зв'язку</li>
+                </ul>
+                <h4>Нефункціональні вимоги:</h4>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="part3" class="tabcontent">
+                <xmp>
+                    <div class="test">
+                        <ul>
+                            <li>
+                                test
+                            </li>
+                        </ul>
+                    </div>
+                </xmp>
+            </div>
+            <div id="part4" class="tabcontent"><img src="" alt="Зовнішній вигляд"></div>
+            <div id="part5" class="tabcontent">
+                <h3>Висновки:</h3>
+                <p>В ході виконаня лабораторної роботи наша бригада змогла придбати практичні навички та закріпити на практиці здобуті знання відносно
+                    роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами. Також був створений шаблон звітного HTML-документом 
+                    для відображення результатів роботи цієї лабораторної роботи та всіх наступних лабораторних робіт в майбутньому. Мета лабораторної роботи досягнута успішно.
+                </p>
+            </div>
+            <div id="part6" class="tabcontent">
+                <h3>Виконавці:</h3>
+                <ul>
+                    <li>Студент групи ІО-02 Томаш Олександр | <a href="https://t.me/Karenin_dog">Telegram</a></li>
+                    <li>Студент групи ІО-02 Валерій Бабич | <a href="https://t.me/valera_babich">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

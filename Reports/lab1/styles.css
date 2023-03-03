@@ -1,0 +1,62 @@
+body {
+    background-color: ghostwhite;
+    font-family: Roboto;}
+.header {
+    text-align: center;}
+.title {    
+    margin: 0px 300px 0 300px;}
+
+.labs {
+    display: flex;
+    flex-direction: row wrap;
+    overflow: hidden;
+    margin: 0px;}
+.lab {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 1% 0 1%;
+    border: 1px;
+    background: blanchedalmond;
+    border-radius: 20px;
+    text-align: center;}
+.main {
+    margin-top: 30px;
+    display: flex;
+    height: 65vh;
+}
+.parts {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    line-height: 100%;}
+.part {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background: blanchedalmond;
+    border-radius: 20px;
+    text-align: center;
+}
+button.active {
+    border-color: red;
+}
+.tabcontent {display: none;}
+.photo1 {
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    right: 2%;
+    top: 50px;}
+.photo2 {
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    right:12%;
+    top:50px;}
