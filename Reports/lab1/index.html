@@ -14,7 +14,7 @@
     <div class="header">
         <h1 class="title">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК"</h1>
         <img class="photo1" src="resources/tomash.jpg" alt="Томаш">
-        <img class="photo2" src="https://thumbs.dreamstime.com/b/gray-man-avatar-design-concept-ai-supported-81256396.jpg" alt="Бабич">
+        <img class="photo2" src="resources/babych.jpg" alt="Бабич">
         <h2>Бригада №20</h2>
         <h2 class="names">Студенти: гр. IO-02 Бабич Валерій, гр. ІО-02 Томаш Олександр</h2>
     </div>
@@ -35,8 +35,10 @@
             <button class="part" onclick="openPart(event, 'part2')">Опис предметного середовища</button>
             <button class="part" onclick="openPart(event, 'part3')">HTML-код головної сторінки WEB-застосунку</button>
             <button class="part" onclick="openPart(event, 'part4')">Зовнішній вигляд веб WEB-застосунку</button>
-            <button class="part" onclick="openPart(event, 'part5')">Висновки до ЛР №1</button>
-            <button class="part" onclick="openPart(event, 'part6')">Виконавці</button>
+            <button class="part" onclick="openPart(event, 'part5')">HTML-код прикладів використання здобутих знань</button>
+            <button class="part" onclick="openPart(event, 'part6')">Зовнішній вигляд прикладів</button>
+            <button class="part" onclick="openPart(event, 'part7')">Висновки до ЛР №1</button>
+            <button class="part" onclick="openPart(event, 'part8')">Виконавці</button>
         </div>
         <div class="content">
             <div id="part1" class="tabcontent">
@@ -66,7 +68,28 @@
                 </ul>
                 <h4>Нефункціональні вимоги:</h4>
                 <ul>
-                    <li></li>
+                    <li>Стек технологій:</li>
+                    <ul>
+                        <li>React</li>
+                        <li>Django</li>
+                        <li>SQlite</li>
+                    </ul>
+                    <li>Вимоги до браузерів:</li>
+                    <ul>
+                        <li>Google Chrome. Версія 29 і вище.</li>
+                        <li>Microsoft Edge Browser. Версія 12 і вище.</li>
+                        <li>Mozilla Firefox. Версія 20 і вище.</li>
+                        <li>Opera. Версія 12.1 і вище.</li>
+                        <li>Apple Safari. Версія 9 і вище.</li>
+                    </ul>
+                    <li>Мінімальні системні вимоги:</li>
+                    <ul>
+                        <li>Процессор із частотою 2.4ГГц</li>
+                        <li>512 МБ оперативної памяті</li>
+                        <li>Графічна плата</li>
+                        <li>Windows XP</li>
+                        <li>Наявність периферії</li>
+                    </ul>
                 </ul>
             </div>
             <div id="part3" class="tabcontent">
@@ -82,13 +105,129 @@
             </div>
             <div id="part4" class="tabcontent"><img src="" alt="Зовнішній вигляд"></div>
             <div id="part5" class="tabcontent">
+                <xmp>
+                <h2>Приклади</h2>
+                <h3>Малюнки:</h3>
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" style="width: 300px; height: 200px;">
+                <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" alt="" style="width: 300px; height: 200px;">
+                <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg" alt="" style="width: 300px; height: 200px;">
+                <h3>Посилання на сторінку з описом предметної галузі:</h3>
+                <a href="https://uk.wikipedia.org/wiki/%D0%A2%D1%83%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%BD%D0%B8%D0%B9_%D0%B0%D0%B3%D0%B5%D0%BD%D1%82">Посилання</a>
+                <h3>Таблиця:</h3>
+                <table style="width:100%;border: 2px solid black; margin-top: 15px;">
+                    <tr>
+                      <th>Country</th>
+                      <th>Capital</th>
+                      <th>Population</th>
+                    </tr>
+                    <tr>
+                      <td>Egypt</td>
+                      <td>Cairo</td>
+                      <td>21 900 000</td>
+                    </tr>
+                    <tr>
+                      <td>France</td>
+                      <td>Paris</td>
+                      <td>68 042 500</td>
+                    </tr>
+                </table>
+                <h3>Списки:</h3>
+                <ul style="list-style-type: decimal-leading-zero;">
+                    <li>Перший елемент</li>
+                    <ul style="list-style-type: upper-latin;">
+                        <li>Один</li>
+                        <li>Два</li>
+                    </ul>
+                    <li>Другий елемент</li>
+                    <li>Третій елемент</li>
+                    <ul style="list-style-type: square;">
+                        <li>One</li>
+                        <li>Two</li>
+                    </ul>
+                    <li>Четвертий елемент</li>
+                    <li>П'ятий елемент</li>
+                    <ul style="list-style-type: disc;">
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </ul>
+                <h3>Форма:</h3>
+                <form action="https://cool_site.com/form.php">
+                    Ім'я:<br>
+                    <input type="text" name="firstname" value="Патрон">
+                    <br>
+                    Прізвище:<br>
+                    <input type="text" name="lastname" value="Пес">
+                    <br><br>
+                    <input type="submit" value="Відправити">
+                </form>
+                </xmp>
+            </div>
+            <div id="part6" class="tabcontent">
+                <h2>Приклади</h2>
+                <h3>Малюнки:</h3>
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" style="width: 300px; height: 200px;">
+                <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" alt="" style="width: 300px; height: 200px;">
+                <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg" alt="" style="width: 300px; height: 200px;">
+                <h3>Посилання на сторінку з описом предметної галузі:</h3>
+                <a href="https://uk.wikipedia.org/wiki/%D0%A2%D1%83%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%BD%D0%B8%D0%B9_%D0%B0%D0%B3%D0%B5%D0%BD%D1%82">Посилання</a>
+                <h3>Таблиця:</h3>
+                <table style="width:100%;border: 2px solid black; margin-top: 15px;">
+                    <tr>
+                      <th>Country</th>
+                      <th>Capital</th>
+                      <th>Population</th>
+                    </tr>
+                    <tr>
+                      <td>Egypt</td>
+                      <td>Cairo</td>
+                      <td>21 900 000</td>
+                    </tr>
+                    <tr>
+                      <td>France</td>
+                      <td>Paris</td>
+                      <td>68 042 500</td>
+                    </tr>
+                </table>
+                <h3>Списки:</h3>
+                <ul style="list-style-type: decimal-leading-zero;">
+                    <li>Перший елемент</li>
+                    <ul style="list-style-type: upper-latin;">
+                        <li>Один</li>
+                        <li>Два</li>
+                    </ul>
+                    <li>Другий елемент</li>
+                    <li>Третій елемент</li>
+                    <ul style="list-style-type: square;">
+                        <li>One</li>
+                        <li>Two</li>
+                    </ul>
+                    <li>Четвертий елемент</li>
+                    <li>П'ятий елемент</li>
+                    <ul style="list-style-type: disc;">
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </ul>
+                <h3>Форма:</h3>
+                <form action="https://cool_site.com/form.php">
+                    Ім'я:<br>
+                    <input type="text" name="firstname" value="Патрон">
+                    <br>
+                    Прізвище:<br>
+                    <input type="text" name="lastname" value="Пес">
+                    <br><br>
+                    <input type="submit" value="Відправити">
+                </form>
+            </div>
+            <div id="part7" class="tabcontent">
                 <h3>Висновки:</h3>
                 <p>В ході виконаня лабораторної роботи наша бригада змогла придбати практичні навички та закріпити на практиці здобуті знання відносно
                     роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами. Також був створений шаблон звітного HTML-документом 
                     для відображення результатів роботи цієї лабораторної роботи та всіх наступних лабораторних робіт в майбутньому. Мета лабораторної роботи досягнута успішно.
                 </p>
             </div>
-            <div id="part6" class="tabcontent">
+            <div id="part8" class="tabcontent">
                 <h3>Виконавці:</h3>
                 <ul>
                     <li>Студент групи ІО-02 Томаш Олександр | <a href="https://t.me/Karenin_dog">Telegram</a></li>
