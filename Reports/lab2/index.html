@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="icon" href="resources/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Лабораторна робота №2</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК"</h1>
+        <img class="photo1" src="resources/tomash.jpg" alt="Томаш">
+        <img class="photo2" src="resources/babych.jpg" alt="Бабич">
+        <h2>Бригада №20</h2>
+        <h2 class="names">Студенти: гр. IO-02 Бабич Валерій, гр. ІО-02 Томаш Олександр</h2>
+    </div>
+    <div class="labs">
+        <button class="lab" onclick="location.href='../lab1/index.html'">Лабораторна робота №1</button>
+        <button style="border: 1px solid red;" class="lab" onclick="location.href='../lab2/index.html'">Лабораторна робота №2</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №3</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №4</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №5</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №6</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №7</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №8</button>
+        <button class="lab" onclick="location.href='#'">Лабораторна робота №9</button>
+    </div>
+    <div class="main">
+        <div class="parts">
+            <button class="part" onclick="openPart(event, 'part1')">Тема, Мета ЛР №2. Місце розташування сайту, звіту</button>
+            <button style="cursor:default;" class="part">CЕЛЕКТОРИ</button>
+            <button class="part" style="min-height: 40px; margin-left: 45px;" onclick="openPart(event, 'part3')">Селектори тегу</button>
+            <button class="part" style="min-height: 40px; margin-left: 45px;" onclick="openPart(event, 'part4')">Селектори класу</button>
+            <button class="part" style="min-height: 40px; margin-left: 45px;" onclick="openPart(event, 'part5')">Селектори ідентифікаторів</button>
+            <button class="part" style="min-height: 40px; margin-left: 45px;" onclick="openPart(event, 'part6')">Інші селектори</button>
+            <button class="part" onclick="openPart(event, 'part7')">CSS: Шрифти Текст Таблиці Фон Контур Списки СSS Просунутий</button>
+            <button class="part" onclick="openPart(event, 'part8')">Висновки до ЛР №2</button>
+        </div>
+        <div class="content">
+            <div id="part1" class="tabcontent">
+                <h3 style="text-align: center;">КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ
+                    ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.</h3>
+                <h3>Мета:</h3>
+                <p>придбати практичні навички роботи з селекторами, ідентифікаторами,
+                    списками, різноманітними властивостями кольору і фону, зовнішними та
+                    внутрішними відступами, плаваючими елементами, оформленням текстових
+                    елементів.</p>
+                <br><br><br>
+                Місце розташування сайту, звіту: <a href="https://github.com/ValeriiBabich/WebLabs">Github</a>
+            </div>
+            <div id="part3" class="tabcontent">
+                <h2>Зовнішній вигляд:</h2>
+                <img src="resources/example1.png" alt="ex1">
+                <h2>HTML-код:</h2>
+                <xmp>
+                        <style>
+                            p {
+                                font-size: large;
+                                font-family: Arial, Helvetica, sans-serif;
+                                color: brown;
+                            }
+                            h1 {
+                                font-size: 20px;
+                                color: red;
+                                background-color: black;
+                            }
+                            div{
+                                height: 100px;
+                                width: 100px;
+                                background-color: blueviolet;
+                                color: antiquewhite;
+                            }
+                        </style>
+                        <p>
+                            Приклад застосування селектору на тегу p
+                        </p>
+                        <h1>
+                            Приклад застосування селектору на тегу h1
+                        </h1>
+                        <ul>
+                            <li>
+                                test1
+                            </li>
+                            <ul>
+                                <li>test11</li>
+                                <li>te12</li>
+                            </ul>
+                            <li>test2</li>
+                        </ul>
+                        <div>
+                            Приклад застосування селектору на тегу div
+                        </div>
+                </xmp>
+            </div>
+            <div id="part4" class="tabcontent">
+                <h2>Зовнішній вигляд:</h2>
+                <img src="resources/example2.png" alt="ex2">
+                <h2>HTML-код:</h2>
+                <xmp>
+                    <style>
+                        .h2-example-class {
+                            font-weight: normal;
+                            font-family: 'Trebuchet MS';
+                            color: blueviolet;
+                        }
+                        .p-example-class {
+                            font-family: Helvetica;
+                            font-size: larger;
+                            font-style: italic;
+                            max-width: 300px;
+                        }
+                        .img-example-class {
+                            height: 300px;
+                        }
+                    </style>
+                    <h2 class="h2-example-class">h2 з назвою класу h2-example-class</h2>
+                    <p class="p-example-class">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae itaque voluptatem commodi rerum! In eum quam doloribus,
+                         iste illum mollitia tenetur autem voluptatem qui quo exercitationem blanditiis beatae. Accusamus, incidunt!</p>
+                    <img class="img-example-class" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8UaO8zvh5DjMIZ3C-jUQyIdtnCH9VUBvPRCZIbf60YQ&s" alt="img">
+                </xmp>
+            </div>
+            <div id="part5" class="tabcontent">
+                <h2>Зовнішній вигляд:</h2>
+                <img src="resources/example3.png" alt="ex3">
+                <h2>HTML-код:</h2>
+                <xmp>
+                    <style>
+                        #upper-h1{
+                            font-family: 'Lucida Sans';
+                            background-color: black;
+                            color: aliceblue;
+                            width: 300px;
+                        }
+                        #upper-h2 {
+                            font-family: 'Courier New';
+                            color: crimson;
+                            font-size: 1cm;
+                        }
+                        #div-cicrle {
+                            height: 200px;
+                            width: 200px;
+                            background-color: brown;
+                            border-radius: 50%;
+                        }
+                    </style>
+                    <h1 id="upper-h1">Cool h1 text</h1>
+                    <h2 id="upper-h2">Some h2 text</h2>
+                    <div id="div-cicrle"></div>
+                </xmp>
+            </div>
+            <div id="part6" class="tabcontent">
+                <h2>Зовнішній вигляд:</h2>
+                <img src="resources/example4.png" alt="ex4">
+                <h2>HTML-код:</h2>
+                <xmp>
+                    <style>
+                        div + p {
+                            background-color: blue;
+                            color: crimson;
+                        }
+                        div{
+                            font-size: 20px;
+                        }
+                        a[href*='example'] {
+                            background-color: aqua;
+                        }
+                        *#warning {
+                            color: red;
+                            font-weight: bold;
+                        }
+                    </style>
+                    <div>
+                        <p>Some text</p>
+                        <p>Some text</p>
+                    </div>
+                    <p style="color: aliceblue;">Some text</p>
+                    <p>Some text</p>
+                    <div>
+                        <p>Some text</p>
+                        <p>Some text</p>
+                    </div>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <a href="example">link to example</a>
+                    <br>
+                    <a href="somewhere">link to somewhere</a>
+                    <h2>Some text</h2>
+                    <h2 id="warning">Some text with warning</h2>
+                    <p>Some text</p>
+                    <p id="warning">Some text with warning</p>
+                </xmp>
+            </div>
+            <div id="part7" class="tabcontent">
+                <h2>Зовнішній вигляд:</h2>
+                <img src="resources/example5_1.png" alt="ex5_1">
+                <img src="resources/example5_2.png" alt="ex5_2">
+                <h2><a href="examples/example5.html">Посилання</a> на HTML документ </h2>
+                <h2>HTML-код:</h2>
+                <xmp>
+                    <style>
+                        body {
+                    background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg');
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: 100% 100%;
+                }
+                p{
+                    width: 500px;
+                }
+                p.ex1 {outline: dashed;}
+                p.ex2 {outline: dotted grey;}
+                p.ex3 {outline: 3px solid yellow;}
+                p.ex4 {outline: thick ridge red;}
+                p.ex5 {
+                    color: blueviolet;
+                    outline: dashed blue;
+                    margin: 30px;
+                    background: mediumturquoise;
+                    border: 1px solid cyan;
+                    outline-offset: 10px;
+                }
+                p.ex6 {text-align: left;} 
+                p.ex7 {text-align: center;} 
+                p.ex8 {text-align: right;} 
+                p.ex13 {
+                    background: rgba(0, 128, 0, 0.1);
+                    font-style: oblique;
+                    font-family: "Trebuchet MS";
+                    font-size: 20px;
+                    line-height: 1.6;
+                    letter-spacing: 2px;
+                    text-indent: 50px;
+                    word-spacing: 3px;
+                    text-shadow: 1px 1px red;
+                }
+                table {
+                    font-family: 'Franklin Gothic light';
+                    width: 50%;
+                    border-collapse: collapse;
+                    border: 1px solid black;
+                    text-align: center;
+                    width: 500px;
+                }
+                tr:nth-child(2n) {
+                    background-color: #e8646a;
+                }  
+                .tip {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                    font-size: 20px;
+                    margin: 30px;
+                }
+                
+                .tip .tiptext {
+                visibility: hidden;
+                width: 120px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                position: absolute;
+                bottom: 150%;
+                left: 50%;
+                margin-left: -60px;
+                }
+                
+                .tip .tiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: black transparent transparent;
+                }
+                
+                .tip:hover .tiptext {
+                visibility: visible;
+                }
+                .dropdown-image {
+                    margin-top: 50px;
+                    margin-bottom: 200px;
+                    position: relative;
+                    display: inline-block;
+                }
+                
+                .dropdown-image-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                }
+                
+                .dropdown-image:hover .dropdown-image-content {
+                display: block;
+                }
+                div.ex16 {
+                    margin-top: 50px;
+                    margin-bottom: 200px;
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s, height 2s, transform 2s;
+                  }
+                  
+                  div.ex16:hover {
+                    width: 200px;
+                    height: 200px;
+                    transform: rotate(720deg);
+                  }
+                    </style>
+                    <p class="ex1">Пунктирний контур.</p>
+                    <p class="ex2">Точковий сірий контур.</p>
+                    <p class="ex3">Суцільний 3px жовтий контур.</p>
+                    <p class="ex4">Товстий ребристий червоний контур.</p>
+                    <p class="ex5">*Багато всього*</p>
+                    <p class="ex6">Зліва</p>
+                    <p class="ex7">Посередині</p>
+                    <p class="ex8">Справа</p>
+                    <p class="ex13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae odio tempora, eveniet culpa 
+                        molestias accusamus perspiciatis sed eaque, nihil, earum eos aliquid aut! Quod omnis reprehenderit eos dolores necessitatibus.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>День тижня</th>
+                            <th>Кількість пар в середньому</th>
+                        </tr>
+                        <tr>
+                            <td>Понеділок</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Вівторок</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Середа</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Четвер</td>
+                            <td>1,5</td>
+                        </tr>
+                        <tr>
+                            <td>П'ятниця</td>
+                            <td>2,5</td>
+                        </tr>
+                        <tr>
+                            <td>Субота</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Неділя</td>
+                            <td>-</td>
+                        </tr>
+                      </table>
+                      <div class="tip">Текст з підказкою
+                        <span class="tiptext">Підказка</span>
+                      </div>
+                      <br>
+                      <h2>dropdown image</h2>
+                      <div class="dropdown-image">
+                        <img src="https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg" width="100" height="50">
+                        <div class="dropdown-image-content">
+                        <img src="https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg" width="300" height="200">
+                        </div>
+                      </div>
+                      <div class="ex16"></div>
+                </xmp>
+            </div>
+            <div id="part8" class="tabcontent">
+                <h3>Висновки:</h3>
+                <p>В ході виконання лабораторної роботи наша бригада змогла придбати практичні навички та закріпити здобуті знання з лекційних занять
+                    відносно роботи з селекторами, ідентифікаторами, списками, різноманітними властивостями кольору і фону, зовнішними та
+                    внутрішними відступами, плаваючими елементами, оформленням текстових елементів. Ці практичні навички допомогли в оформленні
+                 звітного HTML-документа. Мета лабораторної роботи досягнута успішно.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

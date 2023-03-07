@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Самостійна робота №1</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9683/9683458.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <style>
+        body {
+    background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+p{
+    width: 500px;
+}
+p.ex1 {outline: dashed;}
+p.ex2 {outline: dotted grey;}
+p.ex3 {outline: 3px solid yellow;}
+p.ex4 {outline: thick ridge red;}
+p.ex5 {
+    color: blueviolet;
+    outline: dashed blue;
+    margin: 30px;
+    background: mediumturquoise;
+    border: 1px solid cyan;
+    outline-offset: 10px;
+}
+p.ex6 {text-align: left;} 
+p.ex7 {text-align: center;} 
+p.ex8 {text-align: right;} 
+p.ex13 {
+    background: rgba(0, 128, 0, 0.1);
+    font-style: oblique;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    text-indent: 50px;
+    word-spacing: 3px;
+    text-shadow: 1px 1px red;
+}
+table {
+    font-family: 'Franklin Gothic light';
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    width: 500px;
+}
+tr:nth-child(2n) {
+    background-color: #e8646a;
+}  
+.tip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.tip .tiptext {
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+position: absolute;
+bottom: 150%;
+left: 50%;
+margin-left: -60px;
+}
+
+.tip .tiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: black transparent transparent;
+}
+
+.tip:hover .tiptext {
+visibility: visible;
+}
+.dropdown-image {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-image-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+}
+
+.dropdown-image:hover .dropdown-image-content {
+display: block;
+}
+div.ex16 {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+  }
+  
+  div.ex16:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(720deg);
+  }
+    </style>
+    <p class="ex1">Пунктирний контур.</p>
+    <p class="ex2">Точковий сірий контур.</p>
+    <p class="ex3">Суцільний 3px жовтий контур.</p>
+    <p class="ex4">Товстий ребристий червоний контур.</p>
+    <p class="ex5">*Багато всього*</p>
+    <p class="ex6">Зліва</p>
+    <p class="ex7">Посередині</p>
+    <p class="ex8">Справа</p>
+    <p class="ex13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae odio tempora, eveniet culpa molestias accusamus perspiciatis sed eaque, nihil, earum eos aliquid aut! Quod omnis reprehenderit eos dolores necessitatibus.
+    </p>
+    <table>
+        <tr>
+            <th>День тижня</th>
+            <th>Кількість пар в середньому</th>
+        </tr>
+        <tr>
+            <td>Понеділок</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Вівторок</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Середа</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Четвер</td>
+            <td>1,5</td>
+        </tr>
+        <tr>
+            <td>П'ятниця</td>
+            <td>2,5</td>
+        </tr>
+        <tr>
+            <td>Субота</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Неділя</td>
+            <td>-</td>
+        </tr>
+      </table>
+      <div class="tip">Текст з підказкою
+        <span class="tiptext">Підказка</span>
+      </div>
+      <br>
+      <h2>dropdown image</h2>
+      <div class="dropdown-image">
+        <img src="https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg" width="100" height="50">
+        <div class="dropdown-image-content">
+        <img src="https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg" width="300" height="200">
+        </div>
+      </div>
+      <div class="ex16"></div>
+</body>
+</html>
